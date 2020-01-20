@@ -1,0 +1,32 @@
+﻿
+@model  Nortwind.MVCWebUI.Models.ProductViewModel
+
+@{
+    Layout = "../Shared/_Layout.cshtml";   
+ }
+
+
+<!DOCTYPE html>
+       <div  >
+           @foreach (var product in Model.Products)
+           {  <div class ="list-group-item" style="width: 45rem;" >
+              <h6> @product.ProductName </h6>
+              <h6>@product.UnitPrice</h6>
+
+
+             @using (Html.BeginForm("AddToCart","Cart"))
+               {
+                   @Html.Hidden("productId",product.ProductID)
+                   <input class="btn btn-secondary" type="submit" value="Add to cart" />
+               }
+ 
+              </div>
+               
+              
+           }
+           <div class="sayfalama">
+           @Html.Pager(Model.PagingInfo)
+           </div>
+       </div>
+
+

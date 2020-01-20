@@ -1,0 +1,35 @@
+﻿
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ASP.NET MVC PROJE</title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/Site.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="header" class="card-header">
+        @{Html.RenderAction("CartSummary", "Cart");} <!--renderaction bir aksiyonu ayağa kaldırmak için kullanılır-->
+        <h5>ASP.NET MVC İLE PROJE GELİŞTİRİYORUZ</h5>
+    </div>
+  <br />
+    <div id="categories" style="width:50px ; height:500px; float:left">
+            @{Html.RenderAction("List","Category");}
+            
+
+        </div>
+        
+
+    <div id="content" style="width:-500px; height:500px; float:right" >
+        @RenderBody()
+    </div>
+</body>
+</html>
+
+
