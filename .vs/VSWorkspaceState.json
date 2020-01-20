@@ -1,13 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Nortwind.Dal",
     "\\Nortwind.Dal\\Concrete",
-    "\\Nortwind.Dal\\Concrete\\EntityFramework",
-    "\\Nortwind.Entities",
-    "\\Nortwind.MVCWebUI",
-    "\\Nortxind.Dal"
+    "\\Nortwind.Dal\\Concrete\\EntityFramework"
   ],
-  "SelectedNode": "\\Nortwind.Dal\\Concrete\\EntityFramework\\EfProductDal.cs",
   "PreviewInSolutionExplorer": false
 }
